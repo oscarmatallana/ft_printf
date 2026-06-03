@@ -6,7 +6,7 @@
 /*   By: omatalla <omatalla@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 17:27:42 by omatalla          #+#    #+#             */
-/*   Updated: 2026/06/03 17:53:59 by omatalla         ###   ########.fr       */
+/*   Updated: 2026/06/03 18:46:31 by omatalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,14 @@ When you convert 255 to hexadecimal, you repeatedly divide by 16
 255 / 16 = 15 remainder 15 (f)
 15 / 16 = 0 remainder 15 (f)
 So 255 in hexadecimal is "ff" (lowercase) or "FF" (uppercase).
+What does if (uppercase) mean?
+It checks if the uppercase flag is set (non-zero)
+If it is, it uses the uppercase hexadecimal digits (A-F) from base_upper
+If not, it uses the lowercase hexadecimal digits (a-f) from base_lower
+This allows the function to print either uppercase or lowercase hexadecimal
+based on the value of the uppercase parameter:
+0      = false
+non-zero = true
 Test cases:
 0 → verifies that zero prints as "0" and not as an empty string.
 15 → verifies the first hexadecimal letter (f / F).
