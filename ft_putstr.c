@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omatalla <omatalla@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/03 12:33:44 by omatalla          #+#    #+#             */
-/*   Updated: 2026/06/03 12:33:55 by omatalla         ###   ########.fr       */
+/*   Created: 2026/06/03 14:47:57 by omatalla          #+#    #+#             */
+/*   Updated: 2026/06/03 14:48:59 by omatalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <unistd.h>
-# include <stdarg.h>
+int	ft_putstr(char *str)
+{
+	int	i;
 
-int	ft_printf(const char *format, ...);
-
-int	ft_putchar(char c);
-int	ft_putstr(char *str);
-int	ft_putnbr(int n);
-int	ft_putunsigned(unsigned int n);
-int	ft_puthexa(unsigned long n, int uppercase);
-int	ft_putptr(void *ptr);
-
-#endif
+	i = 0;
+	if (!str)
+		return (ft_putstr("(null)"));
+	while (str[i])
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	return (i);
+}
