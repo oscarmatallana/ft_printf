@@ -79,6 +79,7 @@ The project is organized around several helper functions responsible for printin
 
 ## Project Structure
 
+```text
 ft_printf.c
 ├── ft_activate_specifier()
 ├── ft_putchar()
@@ -87,6 +88,7 @@ ft_printf.c
 ├── ft_putunsigned()
 ├── ft_puthexa()
 └── ft_putptr()
+```
 
 ## Algorithm and Technical Design
 
