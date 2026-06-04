@@ -77,6 +77,17 @@ The project is organized around several helper functions responsible for printin
 | `ft_putptr`             | Prints memory addresses                               |
 | `ft_activate_specifier` | Dispatches conversions to the correct helper function |
 
+## Project Structure
+
+ft_printf.c
+├── ft_activate_specifier()
+├── ft_putchar()
+├── ft_putstr()
+├── ft_putnbr()
+├── ft_putunsigned()
+├── ft_puthexa()
+└── ft_putptr()
+
 ## Algorithm and Technical Design
 
 ### Overview
