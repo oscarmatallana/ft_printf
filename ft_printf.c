@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omatalla <omatalla@student.42berlin.de>    +#+  +:+       +#+        */
+/*   By: omatalla <omatalla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 16:45:27 by omatalla          #+#    #+#             */
-/*   Updated: 2026/06/03 18:28:51 by omatalla         ###   ########.fr       */
+/*   Updated: 2026/06/04 11:22:59 by omatalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
-#include <stdarg.h>
+//#include <stdio.h>
+//#include <stdarg.h>
 
 int	ft_activate_specifier(char specifier, va_list arg_pointer)
 {
