@@ -2,6 +2,42 @@
 
 # ft_printf
 
+## Table of Contents
+
+- [Description](#description)
+- [Project Goals](#project-goals)
+- [Skills Acquired](#skills-acquired)
+- [Features](#features)
+  - [Mandatory Conversions](#mandatory-conversions)
+  - [Helper Functions](#helper-functions)
+- [Project Structure](#project-structure)
+- [Algorithm and Technical Design](#algorithm-and-technical-design)
+  - [Overview](#overview)
+  - [Variadic Arguments](#variadic-arguments)
+  - [Number Conversion Strategy](#number-conversion-strategy)
+    - [Decimal Conversion](#decimal-conversion)
+    - [Unsigned Integer Conversion](#unsigned-integer-conversion)
+    - [Hexadecimal Conversion](#hexadecimal-conversion)
+    - [Pointer Conversion](#pointer-conversion)
+  - [Return Value Tracking](#return-value-tracking)
+- [Repository](#repository)
+- [Instructions](#instructions)
+  - [Build the Library](#build-the-library)
+  - [Remove Object Files](#remove-object-files)
+  - [Remove Object Files and Library](#remove-object-files-and-library)
+  - [Rebuild Everything](#rebuild-everything)
+- [Usage Example](#usage-example)
+- [Testing](#testing)
+  - [Custom Tests](#custom-tests)
+  - [Community Testers](#community-testers)
+- [Resources](#resources)
+  - [Documentation](#documentation)
+  - [Books](#books)
+  - [Videos](#videos)
+  - [Useful References](#useful-references)
+- [AI Usage](#ai-usage)
+- [Author](#author)
+
 ## Description
 
 ft_printf is the second core project of the 42 Curriculum. Its objective is to recreate a simplified version of the standard C library function `printf()`.
